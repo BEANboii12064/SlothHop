@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlothHop Arcade</title>
+    <link rel="stylesheet" href="slothhopstyle.css">
+</head>
+<body style="display:block;">
+
+    <div class="game-layout">
+        <!-- Top bar wrapper -->
+        <header class="header-bar">
+            <h2 style="margin:0; color:#27AE60;">🦥 SlothHop Room</h2>
+            <button onclick="window.location.href='index.html'" class="verify-btn" style="width:auto; padding:8px 20px;">🔒 Exit Game</button>
+        </header>
+
+        <!-- Sandbox space where games play strictly isolated -->
+        <main class="arcade-container">
+            <!-- This iframe blocks pop-ups, top redirections, and tracks nothing -->
+            <iframe 
+                class="safe-frame" 
+                src="https://famobi.com" 
+                sandbox="allow-scripts allow-same-origin"
+                title="Safe Casual Game">
+            </iframe >
+        </main>
+    </div>
+
+</body>
+</html>
